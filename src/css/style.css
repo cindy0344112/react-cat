@@ -1,0 +1,113 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+  
+.header {
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    line-height: 44px;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+
+.tool-box {    
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.tool-box .add-box {
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+    font-size: 1.2rem;
+    border: 1px solid #444;
+}
+
+.tool-box .add-box .add-text {
+    margin-left: 4px;
+    font-weight: 600;
+}
+
+.img-wrapper {
+    position: relative;
+    height: 280px;
+}
+
+.card-img-top {
+    height: 100%; /* 圖片高度設定為父元素的100% */
+    width: auto;  /* 自動調整寬度以保持比例 */
+}
+
+.out-stock {
+    z-index: 1 !important;
+}
+
+.out-stock .out-stock-text {
+    z-index: 1 !important;
+}
+
+.out-stock-text {
+    display: none;
+}
+
+.out-stock .out-stock-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(199, 84, 18);
+    z-index: -1;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.catCard {
+    cursor: pointer;
+}
+
+.imageInModal {
+    width: 180px;
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+.datepickerInput {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.login-wrapper .login-box {
+    width: 350px;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+}
+
+.backToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
+    background: cadetblue;
+}
+
